@@ -201,7 +201,7 @@ defmodule Yacto.Migration.File do
       {:ok,
        %__MODULE__{
          version: version,
-         dbname: String.to_atom(dbname),
+         dbname: String.to_atom("#{dbname}_#{System.get_env("MIX_ENV", "dev")}"),
          operation: operation,
          datetime_str: datetime_str,
          path: relative_path,

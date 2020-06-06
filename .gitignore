@@ -26,3 +26,4 @@ erl_crash.dump
 /test/apps/gen_migration/priv/
 
 *.swp
+/.elixir_ls
